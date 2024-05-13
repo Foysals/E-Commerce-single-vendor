@@ -195,7 +195,7 @@
                 <div class="card card-primary">
                   <div class="card-body">
                       <div class="form-group">
-                        <img src="{{asset('public/files/product/'.$product->thumbnail)}}" style="height: 50px; width:50px;">
+                        <img src="{{asset('files/product/'.$product->thumbnail)}}" style="height: 50px; width:50px;">
                         <label for="exampleInputEmail1">Main Thumbnail <span class="text-danger">*</span> </label><br>
                         <input type="file" name="thumbnail"  accept="image/*" class="dropify">
                         <input type="hidden" name="old_thumbnail" value="{{ $product->thumbnail }}" >
@@ -217,7 +217,7 @@
                               <div class="row" >
                                @foreach($images as $key => $image)
                                  <div class="col-md-4" >
-                                    <img alt="" src="{{asset('public/files/product/'.$image)}}" style="width: 100px; height: 80px; padding: 10px;"/>
+                                    <img alt="" src="{{asset('files/product/'.$image)}}" style="width: 100px; height: 80px; padding: 10px;"/>
                                     <input type="hidden" name="old_images[]" value="{{ $image }}">
                                     <button type="button" class="remove-files" style="border: none;">X</button>
                                  </div>
@@ -241,6 +241,10 @@
                             <h6>Slider Product</h6>
                            <input type="checkbox" name="product_slider" value="1" @if($product->product_slider==1) checked @endif  data-bootstrap-switch data-off-color="danger" data-on-color="success">
                          </div>  
+                         <div class="card p-4">
+                          <h6>Trendy Product</h6>
+                         <input type="checkbox" name="trendy" value="1" @if($product->trendy==1) checked @endif  data-bootstrap-switch data-off-color="danger" data-on-color="success">
+                       </div>
     
                          <div class="card p-4">
                             <h6>Status</h6>

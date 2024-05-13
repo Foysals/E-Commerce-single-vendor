@@ -1,9 +1,9 @@
 @extends('front.layouts.app')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{ asset('public/frontend') }}/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
-<link rel="stylesheet" type="text/css" href="{{ asset('public/frontend') }}/styles/shop_styles.css">
-<link rel="stylesheet" type="text/css" href="{{ asset('public/frontend') }}/styles/shop_responsive.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('frontend/plugins/jquery-ui-1.12.1.custom/jquery-ui.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('frontend/styles/shop_styles.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('frontend/styles/shop_responsive.css') }}">
 @include('front.layouts.collaps_nav')
 	<div class="home m-5">
 		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('frontend/images/shop_background.jpg') }}"></div>
@@ -32,10 +32,4 @@
 		</div>
 	</div>
 	<hr>
-	<style>
-		.shop{
-			left: 2%;
-			width: 550px;
-		}
-	</style>
 @endsection

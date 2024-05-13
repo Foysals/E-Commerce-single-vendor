@@ -38,7 +38,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="">
-                    <img src="{{ asset('public/files/product/'.$product->thumbnail) }}" height="100%" width="100%">
+                    <img src="{{ asset('files/product/'.$product->thumbnail) }}" height="100%" width="100%">
                 </div>
               </div>
               <div class="col-lg-8 ">

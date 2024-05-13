@@ -163,6 +163,7 @@
                                 <div class="tabs_line"><span></span></div>
                             </div>
 
+                            
                             <!-- Product Panel -->
                             <div class="product_panel panel active">
                                 <div class="featured_slider slider">
@@ -170,7 +171,7 @@
                                     <!-- Slider Item -->
                                     <div class="featured_slider_item">
                                         <div class="border_active"></div>
-                                        <div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                        <div class="product_item discount d-flex flex-column align-items-center justify-content-center  text-center">
                                             <div class="product_image d-flex flex-column align-items-center justify-content-center">
                                                 <img src="{{ asset('files/product/'.$row->thumbnail) }}" alt="{{ $row->name }}" height="100%" width="60%">
                                             </div>
